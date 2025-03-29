@@ -17,11 +17,11 @@ class Animal {
     }
 
     void run (int rDistance) {
-        System.out.println("Тварина" + name + "прибігла" + rDistance + "метрів");
+        System.out.println("Тварина " + name + " прибігла " + rDistance + " метрів");
     }
 
     void swim (int sDistance) {
-        System.out.println("Тварина" + name + "проплила" + sDistance + "метрів");
+        System.out.println("Тварина " + name + " проплила " + sDistance + " метрів");
     }
 
 }
