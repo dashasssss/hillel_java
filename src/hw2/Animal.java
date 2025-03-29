@@ -1,7 +1,7 @@
 package hw2;
 
 class Animal {
-
-    int a ;
-    int b;
+    void sound() {
+        System.out.println("Тварина видає звук");
+    }
 }
