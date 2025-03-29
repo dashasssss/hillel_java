@@ -4,7 +4,6 @@ class Cat extends Animal {
 
     static int catCount = 0;
     private static final int MAX_RUN_DISTANCE = 200;
-    private static final int MAX_SWIM_DISTANCE = 5;
 
     Cat (String name) {
         super(name);
@@ -16,5 +15,17 @@ class Cat extends Animal {
         System.out.println("Мяу мяу");
     }
 
+    @Override
+    void run(int rDistance) {
+        if (rDistance > MAX_RUN_DISTANCE) {
+            System.out.println(name + " can't run more than " + MAX_RUN_DISTANCE + " meters.");
+        } else {
+            super.run(rDistance);
+        }
+    }
 
+    @Override
+    void swim(int distance) {
+        System.out.println(name + " can't swim!");
+    }
 }
